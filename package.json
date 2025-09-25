@@ -16,7 +16,7 @@
     "typescript": "^5.9.2"
   },
   "files": [
-     "dist",
+    "dist",
     "LICENSE",
     "package.json",
     "readme.md"
@@ -42,5 +42,12 @@
   "publishConfig": {
     "access": "public",
     "provenance": true
+  },
+  "repository": {
+    "url": "git+https://github.com/phothinmg/rackup.git",
+    "type": "git"
+  },
+  "bugs": {
+    "url": "https://github.com/phothinmg/rackup/issues"
   }
 }

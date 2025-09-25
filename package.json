@@ -1,0 +1,46 @@
+{
+  "name": "rackup",
+  "version": "0.0.1",
+  "description": "store",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [
+    "store"
+  ],
+  "author": "Pho Thin Maung<phothinmg@disroot.org>",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^24.5.2",
+    "typescript": "^5.9.2"
+  },
+  "files": [
+     "dist",
+    "LICENSE",
+    "package.json",
+    "readme.md"
+  ],
+  "dependencies": {
+    "mesco": "^0.0.1"
+  },
+  "main": "dist/index.cjs",
+  "types": "dist/index.d.cts",
+  "module": "dist/index.js",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  }
+}
